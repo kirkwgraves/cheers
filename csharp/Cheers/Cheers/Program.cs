@@ -10,6 +10,25 @@ namespace Cheers
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("What's your name?");
+            string name = Console.ReadLine();
+            string lowerName = name.ToLower();
+            string anLetters = "halfnorsemix";
+            foreach (char letter in lowerName)
+            {
+                if (anLetters.Contains(letter))
+                {
+                    Console.Write("Give me an " + letter + "!\n");
+                }
+                else
+                {
+                    Console.Write("Give me a " + letter + "!\n");
+                }
+            }
+            Console.Write(name.ToUpper() + " is just GRAND!\n");
+            Console.ReadKey();            
         }
+
+        
     }
 }
